@@ -15,7 +15,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-size: var(--font-size);
-  font-variation-settings: "wght" var(--font-size);
+  font-variation-settings: "wght" var(--font-size) woff2 supports variations, woff2-variations;
   color: var(--accent-color);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
