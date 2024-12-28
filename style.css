@@ -15,7 +15,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-size: var(--font-size);
-  font-variation-settings: "wght" var(--font-size) woff2 supports variations, woff2-variations;
+  font-variation-settings: "wght" var(--font-size), woff2 supports variations, woff2-variations;
   color: var(--accent-color);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
@@ -498,7 +498,7 @@ br {
   filter: saturate(200%);
 }
 .opacity {
-  filter: opacity(0.8) brightness(200%);
+  filter: opacity(0.8);
 }
 .mix {
   filter: invert(10%) brightness(160%) saturate(60%) hue-rotate(311deg);
