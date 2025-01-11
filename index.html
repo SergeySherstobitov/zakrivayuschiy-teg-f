@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/themes.css" />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="./images/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon.png" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
@@ -44,23 +45,19 @@
         </ul>
       </nav>
     </header>
-    <main class="cards">
-      <ul class="cards__list">
-        <li class="cards__list-item">
-          <article class="list-item__card">
-            <h2 class="list-item__card-title">
+    <main class="main">
+          <article class="cards">
+            <h2 class="card-title">
               Фритрек и нулевой спринт: Подготовка к работе
             </h2>
-            <div class="img-container">
-              <span class="img-label">&lt;/HTML&gt;</span>
-            <img
-              class="card-img brightness"
-              loading="lazy"
-              src="./images/car.png"
-              alt="Изображение яркой машинки"
-            />
-          </div>
-            <div class="list-item__card-text">
+            <figure>
+            <img class="img-container"
+            loading="lazy"
+            src="./images/car.png"
+            alt="Изображение яркой машинки"/>
+            <figcaption class="img-label">&lt;/HTML&gt;</figcaption>
+            </figure>
+            <div class="card-text">
               <p>
                 Это было самое начало пути. На этом этапе важно было
                 проникнуться основами и настроиться на учёбу. И, возможно,
@@ -68,7 +65,7 @@
               </p>
               <p>Место для ваших воспоминаний о начале обучения.</p>
             </div>
-            <div class="list-item__card-buttons">
+            <div class="card-buttons">
               <!-- тег оборачивающий SVG иконку с сердцем  -->
               <button type="button" class="card__icon-button">
                 <svg
@@ -108,22 +105,17 @@
               </button>
             </div>
           </article>
-        </li>
-        <li class="cards__list-item">
-          <article class="list-item__card">
-            <h2 class="list-item__card-title">
+          <article class="cards">
+            <h2 class="card-title">
               1 спринт: Я — чистый лист
             </h2>
-            <div class="img-container">
-              <span class="img-label">&lt;/HTML&gt;</span>
-            <img
-              class="card-img grayscale"
+            <figure>
+              <img class="img-container"
               loading="lazy"
               src="./images/car.png"
-              alt="Изображение черно-белой машинки"
-            />
-            </div>
-            <div class="list-item__card-text">
+              alt="Изображение черно-белой машинки"/>
+              <figcaption class="img-label">&lt;/HTML&gt;</figcaption>
+            <div class="card-text">
               <p>
                 На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. 
                 Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. 
@@ -131,7 +123,7 @@
               </p>
               <p>Место для ваших воспоминаний о начале первого спринта.</p>
             </div>
-            <div class="list-item__card-buttons">
+            <div class="card-buttons">
               <button type="button" class="card__icon-button">
                 <svg
                   class="like-icon"
@@ -171,31 +163,27 @@
               </button>
             </div>
           </article>
-        </li>
-
-        <li class="cards__list-item">
-          <article class="list-item__card">
-            <h2 class="list-item__card-title">
+          <article class="cards">
+            <h2 class="card-title">
               1 спринт: А если не получится?
             </h2>
-            <div class="img-container">
-              <span class="img-label">&lt;css&gt;</span>
-            <img
-              class="card-img saturate"
+            <figure>
+              <img class="img-container"
               loading="lazy"
               src="./images/car.png"
-              alt="Изображение машинки насыщенных цветов"
-            />
-          </div>
-            <div class="list-item__card-text">
+              alt="Изображение машинки насыщенных цветов"/>
+              <figcaption class="img-label">&lt;css&gt;</figcaption>
+            </figure>
+            <div class="card-text">
               <p>
                 Первый проект — позади! Но это всё ещё самое начало пути. 
                 Радость могла быстро померкнуть и смениться ожиданием провала. 
                 Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
               </p>
+
               <p>Место для ваших воспоминаний об окончании первого спринта.</p>
             </div>
-            <div class="list-item__card-buttons">
+            <div class="card-buttons">
               <button type="button" class="card__icon-button">
                 <svg
                   class="like-icon"
@@ -234,23 +222,18 @@
               </button>
             </div>
           </article>
-        </li>
-
-        <li class="cards__list-item">
-          <article class="list-item__card">
-            <h2 class="list-item__card-title">
+          <article class="cards">
+            <h2 class="card-title">
               2 спринт: Погоня за идеалом
             </h2>
-            <div class="img-container">
-              <span class="img-label">&lt;desigions&gt;</span>
-            <img
-              class="card-img invert "
+            <figure>
+              <img class="img-container"
               loading="lazy"
               src="./images/car.png"
-              alt="Изображение машинки в инверсии"
-            />
-          </div>
-            <div class="list-item__card-text">
+              alt="Изображение машинки в инверсии"/>
+              <figcaption class="img-label">&lt;desigions&gt;</figcaption>
+            </figure>
+            <div class="card-text">
               <p>
                 На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. 
                 Вы могли попытаться погнаться за идеалом и понять, что он недостижим. 
@@ -258,7 +241,7 @@
               </p>
               <p>Место для ваших воспоминаний о начале второго спринта.</p>
             </div>
-            <div class="list-item__card-buttons">
+            <div class="card-buttons">
               <button type="button" class="card__icon-button">
                 <svg
                   class="like-icon"
@@ -297,23 +280,18 @@
               </button>
             </div>
           </article>
-        </li>
-
-        <li class="cards__list-item">
-          <article class="list-item__card">
-            <h2 class="list-item__card-title">
+          <article class="cards">
+            <h2 class="card-title">
               2 спринт: О тех, кто рядом
             </h2>
-            <div class="img-container">
-              <span class="img-label">care</span>
-            <img
-              class="card-img opacity "
+            <figure>
+              <img class="img-container"
               loading="lazy"
               src="./images/car.png"
-              alt="Изображение светлой машинки"
-            />
-            </div>
-            <div class="list-item__card-text">
+              alt="Изображение светлой машинки"/>
+              <figcaption class="img-label">&lt;care&gt;</figcaption>
+            </figure>
+            <div class="card-text">
               <p>
                 Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). 
                 Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться,
@@ -321,7 +299,7 @@
               </p>
               <p> Место для ваших воспоминаний об окончании второго спринта.</p>
             </div>
-            <div class="list-item__card-buttons">
+            <div class="card-buttons">
               <button type="button" class="card__icon-button">
                 <svg
                   class="like-icon"
@@ -360,23 +338,18 @@
               </button>
             </div>
           </article>
-        </li>
-
-        <li class="cards__list-item">
-          <article class="list-item__card">
-            <h2 class="list-item__card-title">
+          <article class="cards">
+            <h2 class="card-title">
               3 спринт: Обходные стратегии
             </h2>
-            <div class="img-container">
-              <span class="img-label">&lt;support&gt;</span>
-            <img
-              class="card-img sepia"
+            <figure>
+              <img class="img-container"
               loading="lazy"
               src="./images/car.png"
-              alt="Изображение машинки в сепии"
-            />
-            </div>
-            <div class="list-item__card-text">
+              alt="Изображение машинки в сепии"/>
+              <figcaption class="img-label">&lt;support&gt;</figcaption>
+            </figure>
+            <div class="card-text">
               <p>
                 На этом курсе вы постоянно решали разные задачи. 
                 В какой-то момент вам могло показаться, что решения просто иссякли.
@@ -384,7 +357,7 @@
               </p>
               <p>Место для ваших воспоминаний о начале третьего спринта.</p>
             </div>
-            <div class="list-item__card-buttons">
+            <div class="card-buttons">
               <button type="button" class="card__icon-button">
                 <svg
                   class="like-icon"
@@ -423,30 +396,25 @@
               </button>
             </div>
           </article>
-        </li>
-
-        <li class="cards__list-item">
-          <article class="list-item__card">
-            <h2 class="list-item__card-title">
+          <article class="cards">
+            <h2 class="card-title">
               3 спринт: Когда опускаются руки
             </h2>
-            <div class="img-container">
-              <span class="img-label">&lt;lifes-style:none;&gt;</span>
-            <img
-              class="card-img blur"
+            <figure>
+              <img class="img-container"
               loading="lazy"
               src="./images/car.png"
-              alt="Изображение размытрой машинки"
-            />
-            </div>
-            <div class="list-item__card-text">
+              alt="Изображение размытрой машинки"/>
+              <figcaption class="img-label">&lt;lifes-style:none;&gt;</figcaption>
+            </figure>
+            <div class="card-text">
               <p>
-                Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную <br>пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. 
+                Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. 
                 В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.
               </p>
               <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
             </div>
-            <div class="list-item__card-buttons">
+            <div class="card-buttons">
               <button type="button" class="card__icon-button">
                 <svg
                   class="like-icon"
@@ -485,32 +453,28 @@
               </button>
             </div>
           </article>
-        </li>
-        <li class="cards__list-item">
-          <article class="list-item__card">
-            <h2 class="list-item__card-title">
+          <article class="cards">
+            <h2 class="card-title">
               «Сейчас я здесь »
             </h2>
-            <div class="img-container smilecat"> 
-              <span class="img-label">&lt;experience&gt;</span>
-            <img
-              class="card-img mix"
+            <figure>
+              <img class="img-container"
               loading="lazy"
               src="./images/car.png"
-              alt="Изображение машинки под разными фильтрами"
-            />
-            </div>
-            <div class="list-item__card-text">
+              alt="Изображение машинки под разными фильтрами"/>
+              <figcaption class="img-label">&lt;experience&gt;</figcaption>
+            </figure>
+            <div class="card-text">
               <p>
                 Сейчас вы уже очень много знаете о вёрстке. Но это только начало. 
-                Во-первых, впереди ещё много материала про «красотищу». Во-<wbr> вторых, 
+                Во-первых, впереди ещё много материала про «красотищу». Во-вторых, 
                 с окончанием курса учёба не заканчивается.Вёрстка — это целый мир. 
                 И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай,
                 когда важен сам процесс познания. Ведь часто путь — и есть результат.
               </p>
               <p>Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
             </div>
-            <div class="list-item__card-buttons">
+            <div class="card-buttons">
               <button type="button" class="card__icon-button">
                 <svg
                   class="like-icon"
@@ -549,8 +513,6 @@
               </button>
             </div>
           </article>
-        </li>
-      </ul>
       <button type="button" 
       class="footer__save-button animate"
        onclick="window['dialog-id'].showModal();"
