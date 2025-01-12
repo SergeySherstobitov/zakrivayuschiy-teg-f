@@ -129,20 +129,19 @@
   position: relative;
   z-index: 1;
 }
-*/\\\\\\\\\\\/*
-
- .like-icon .core {
-  fill: var(--page-background-color, #ffffff);
+/*Стили  с path*/
+.like-icon .core {
+  fill: var(--bg-color);
   transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon .main-body {
-  fill: var(--page-background-color, #ffffff);
+  fill: var(--bg-color);
   transition: fill 0.3s linear;
 }
 
 .like-icon .contour {
-  fill: var(--like-contour-color, #000000);
+  fill: var(--contour-color);
   transition: fill 0.1s linear;
 }
 
@@ -157,41 +156,91 @@
 /* Стили с hover */
 
 .like-icon:hover .core {
-  fill: var(--like-contour-color, #000000);
+  fill: var(--contour-color);
   transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
-  fill: var(--like-contour-color, #000000);
+  fill: var(--contour-color);
   transition: fill 0.3s linear 0.05s;
 }
 
 /* Стили с active */
 
 .like-icon:active .core {
-  fill: var(--like-sparks-color, #ff0000);
+  fill: var(--sparks-color);
   transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
-  fill: var(--like-sparks-color, #ff0000);
+  fill: var(--sparks-color);
   transition: fill 0.3s linear 0.05s;
+}
+/**/
+.card__icon-button:active .core {
+  fill: red;
+  transition: all 0.3s 0.05s;
+}
+
+.card__icon-button:active .main-body {
+  fill: red;
+  transition: 0.3s;
+}
+
+.contour {
+  fill: var(--contour-color);
+  transition: 0.1s linear;
+}
+
+.like-icon.is-liked .sparks {
+  animation: flame 0.3s 0.3s ease-in;
+}
+
+@keyframes flame {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.like-icon.is-liked {
+  animation: scale 0.3s 0.1s ease-in;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .contour {
+  --color-svg: red;
+  fill: var(--contour-color);
+  transition: 0.3s 0.06s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: red;
+  transition: 0.3s;
+}
+
+.like-icon.is-liked .core {
+  fill: red;
+  transition: 0.3s 0.05s;
 }
 
 /* Стили после клика */
 
 .like-icon.is-liked .core {
-  fill: var(--like-sparks-color, #ff0000);
+  fill: var(--sparks-color);
   transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
-  fill: var(--like-sparks-color, #ff0000);
+  fill: var(--sparks-color);
   transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .contour {
-  fill: var(--like-sparks-color, #ff0000);
+  fill: var(--sparks-color);
   transition: fill 0.3s linear 0.06s;
 }
 

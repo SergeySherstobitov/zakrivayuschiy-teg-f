@@ -56,7 +56,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 17px;
+  gap: 16px;
   font-size: 14px;
   line-height: 14px;
   padding-left: 18px;
@@ -156,10 +156,9 @@
 .card-text {
   display: grid;
   grid-template-rows: 1fr auto;
-  gap: 29.8px;
-  margin: 25px;
-  font: var(--accent-font);
-  font-family: "Inter-Variable";
+  gap: 26.8px;
+  margin: 24px;
+  font-family: var(--main-font), sans-serif;
   font-size: 18px;
   font-variation-settings: "wght" var(--card-font-weight);
   letter-spacing: 0.39px;
@@ -173,7 +172,6 @@ figure {
 }
 
 .img-container {
-  min-width: 371px;
   height: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
   aspect-ratio: 1/1;
   background-size: cover;
@@ -181,9 +179,7 @@ figure {
   width: 100%;
   object-fit: cover;
   margin-bottom: -4px;
-  outline: 2px solid #000;
-  /*outline-top: 2px solid var(--accent-color);
-  outline-bottom: 2px solid var(--accent-color);*/
+  outline: 2px solid var(--accent-color);
 }
 
 .img-label {
@@ -214,7 +210,7 @@ figure {
 .card-buttons {
   display: flex;
   justify-content: flex-end;
-  margin-right: 25px;
+  margin-right: 27px;
   margin-bottom: 25px;
 }
 
@@ -271,6 +267,15 @@ figure {
 .svg__icon {
   color: var(--button-color);
   mix-blend-mode: difference;
+  width: 21px;
+  height: 21px;
+}
+
+.svg__dial {
+  color: var(--button-color);
+  mix-blend-mode: difference;
+  width: 39px;
+  height: 39px;
 }
 
 .animate .button__icon {
@@ -321,7 +326,11 @@ dialog[open] {
   }
 
   .theme-menu__list {
-    gap: 13px;
+    gap: 14px;
+  }
+
+  .card-title {
+    padding: 8px 3px 3px 14px;
   }
 
   .img-container {
@@ -342,8 +351,16 @@ dialog[open] {
     gap: 6px;
   }
 
+  .dialog-button {
+    padding: 10px 10px;
+  }
+
   dialog {
     padding: 25px;
+  }
+  dialog[open] {
+    display: grid;
+    grid-template-columns: 50px 237px;
   }
 
   .svg__icon {
